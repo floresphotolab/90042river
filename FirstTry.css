@@ -297,6 +297,16 @@ fieldset {
   outline:0;
   border:1px solid #999;
 }
+
+.container p strong {
+    color: #FFFFFF;
+    text-align: center;
+}
+.container-fluid .container .text-center {
+    color: #FFFFFF;
+    text-align: center;
+}
+
 ::-webkit-input-placeholder {
  color:#888;
 }
