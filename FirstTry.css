@@ -307,6 +307,10 @@ fieldset {
     text-align: center;
 }
 
+.container .row .col-xl-7 {
+    color: #FFFFFF;
+}
+
 ::-webkit-input-placeholder {
  color:#888;
 }
