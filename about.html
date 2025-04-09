@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – 90042River</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: calc(100vh - 60px);
+            /* leave room for header */
+            gap: 1rem;
+            padding: 6rem 2rem 2rem;
+        }
+
+        .column {
+            overflow-y: scroll;
+            padding-right: 1rem;
+            scrollbar-width: thin;
+        }
+
+        .column::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .column::-webkit-scrollbar-thumb {
+            background: #708090;
+            border-radius: 3px;
+        }
+
+        .column h2 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #B2EBF2;
+        }
+
+        .column p,
+        .column a {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #B2BEB5;
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">90042River</div>
+        <nav>
+            <ul class="menu">
+                <li data-page="home">△</li>
+                <li data-page="gallery">◇</li>
+                <li data-page="about" class="active">▲</li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="about-grid">
+        <div class="column">
+            <h2>An Observer or Participant</h2>
+            <img src="images/Self Portrait-2.jpg" alt="Aaron near the LA River">
+            <p>
+                Aaron began photographing after leaving his job in city government and using his savings to buy a
+                camera. His neighbor, Frank Xochihua, had introduced him to photography years earlier by taking the
+                photo used for Aaron’s brother’s tombstone.
+            </p>
+            <p>
+                He currently documents unhoused life along the Los Angeles River, focusing on the individuals and
+                structures that exist outside of city-sanctioned housing. His work includes still photography, video,
+                and field notes tied to specific locations and dates.
+            </p>
+            <p>
+                He was born and raised in Highland Park, Los Angeles. He briefly studied chemical engineering at UC
+                Berkeley before dropping out. He later enrolled at Pasadena City College, where he began photographing
+                regularly.
+            </p>
+            <p>
+                Aaron has worked as a decathlon coach, food cart attendant, casino chip collector, construction worker,
+                environmental inspector, baby photographer, quinceañera photographer, and freelance photographer.
+            </p>
+            <p>
+                He has collaborated with Marylou Juarez, a film student at Cal State Long Beach, and is working with
+                Jimmy, a Colombian art director from Clika Underground, on a documentary about immigrant encampments and
+                law enforcement interactions along the river.
+            </p>
+
+
+            <!-- You can change the image path and alt text -->
+
+        </div>
+
+        <div class="column">
+            <h2>Process & Projects</h2>
+            <p>
+                This site is an evolving archive. It blends street photography, legal research, video, and oral
+                documentation. It is directly informed by the documentary <em>No Other Land</em> and begins with the
+                assumption that the most vulnerable must be attended to first.
+            </p>
+            <p>
+                The project focuses on the Los Angeles River, particularly the section near Highland Park. It examines
+                how changes in infrastructure, policing, and demographics affect people living unhoused along the river.
+                Each entry is tied to a specific date and location. Images and links are presented alongside public
+                records and policy timelines.
+            </p>
+            <p>
+                The objective is to find observable patterns of state action and local neglect. This includes how
+                encampments are removed, how residents are displaced, and how city policy is enforced or ignored.
+            </p>
+            <p>
+                The work is informed by a duty to love one's neighbor, as expressed by Søren Kierkegaard. Documentation
+                is used here as a form of accountability and witness.
+            </p>
+            <img src="images/documents-1.jpg" alt="Los Angeles River encampment at night">
+
+        </div>
+
+        <div class="column">
+            <h2>Contact & Involvement</h2>
+
+            <p>
+                If you have any questions or are interested in collaborating, you can reach me by email or Instagram:
+            </p>
+
+            <p>
+                Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
+                Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a>
+            </p>
+
+            <p>
+                If you’re interested in volunteering, consider starting by simply stopping and talking to people who are
+                living unhoused. Ask how they’re doing. Offer something if you can.
+            </p>
+
+            <p>
+                If you’re not comfortable doing that directly, there are organizations that work with residents along
+                the Los Angeles River. One of them is <a href="https://neno-la.org/" target="_blank">Northeast Neighbors
+                    Organization (NENO)</a>, which helps provide food, supplies, and community support.
+            </p>
+
+
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
