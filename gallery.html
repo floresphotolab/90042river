@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery – 90042River</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="gallery-page">
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            <div class="project-title">90042River</div>
+            <div class="project-subtitle">a project by Aaron Flores</div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li data-page="home"><span class="symbol">△</span><span class="label">Home</span></li>
+                <li data-page="gallery"><span class="symbol">◇</span><span class="label">Gallery</span></li>
+                <li data-page="about"><span class="symbol">▲</span><span class="label">About</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-layout">
+
+        <!-- Left nav -->
+        <aside class="gallery-nav">
+            <div class="gallery-toggle" data-target="nightscapes">Nightscapes</div>
+            <div class="gallery-toggle" data-target="dogs">Dogs</div>
+            <div class="gallery-toggle" data-target="lamc">LAMC 63.44</div>
+        </aside>
+
+        <!-- Right gallery display -->
+        <section class="gallery-display">
+
+            <div class="gallery-section" id="nightscapes">
+                <h2 class="gallery-title">Nightscapes</h2>
+                <div class="photo-carousel">
+                    <img src="images/Nightscapes-1.jpg" alt="Nightscape 1" />
+                    <img src="images/Nightscapes-2.jpg" alt="Nightscape 2" />
+                    <img src="images/Nightscapes-3.jpg" alt="Nightscape 3" />
+                    <img src="images/Nightscapes-4.jpg" alt="Nightscape 4" />
+                    <img src="images/Nightscapes-5.jpg" alt="Nightscape 5" />
+                    <img src="images/Nightscapes-6.jpg" alt="Nightscape 6" />
+                    <img src="images/Nightscapes-7.jpg" alt="Nightscape 7" />
+                </div>
+            </div>
+
+            <div class="gallery-section" id="dogs">
+                <h2 class="gallery-title">Dogs</h2>
+                <div class="photo-carousel">
+                    <img src="images/Dogs-1.jpg" alt="Dog 1" />
+                    <img src="images/Dogs-2.jpg" alt="Dog 2" />
+                    <img src="images/Dogs-3.jpg" alt="Dog 3" />
+                    <img src="images/Dogs-4.jpg" alt="Dog 4" />
+                    <img src="images/Dogs-5.jpg" alt="Dog 5" />
+                    <img src="images/Dogs-6.jpg" alt="Dog 6" />
+                    <img src="images/Dogs-7.jpg" alt="Dog 7" />
+                    <img src="images/Dogs-8.jpg" alt="Dog 8" />
+                    <img src="images/Dogs-9.jpg" alt="Dog 9" />
+                    <img src="images/Dogs-10.jpg" alt="Dog 10" />
+                    <img src="images/Dogs-11.jpg" alt="Dog 11" />
+                    <img src="images/Dogs-12.jpg" alt="Dog 12" />
+                </div>
+            </div>
+
+
+            <div class="gallery-section" id="lamc">
+                <h2 class="gallery-title">LAMC 63.44</h2>
+                <div class="photo-carousel">
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-1.jpg" alt="LAMC 1" />
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-2.jpg" alt="LAMC 2" />
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-3.jpg" alt="LAMC 3" />
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-4.jpg" alt="LAMC 4" />
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-5.jpg" alt="LAMC 5" />
+                    <img src="images/LAMC 63.44 EnforcedFeb3rd-6.jpg" alt="LAMC 6" />
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
