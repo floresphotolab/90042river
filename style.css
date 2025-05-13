@@ -9,6 +9,8 @@ body {
     color: #B2BEB5;
     font-family: 'IBM Plex Mono', monospace;
     line-height: 1.6;
+    overflow-x: hidden;
+
 }
 
 header {
@@ -34,9 +36,27 @@ header:hover {
 }
 
 .logo {
-    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
     color: #B2BEB5;
+    text-decoration: none;
 }
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.project-subtitle {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    line-height: 1;
+}
+
 
 .menu {
     display: flex;
@@ -74,11 +94,32 @@ main {
     width: 100%;
 }
 
+/* Base text style */
+/* Base text style for all timeline entries */
 .text {
-    display: block;
-    word-break: break-word;
+    color: #B2BEB5;
     line-height: 1.6;
 }
+
+/* Personal work: stands out with cyan tint */
+.text.personal {
+    color: #B2EBF2;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Clickable external links (not personal work) */
+.text.clickable {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* On hover: indicate it's a link */
+.text.clickable:hover {
+    text-decoration: underline;
+}
+
+
 
 
 .underline {
@@ -86,9 +127,7 @@ main {
 }
 
 /* New hover effect for linkable text */
-.item:hover .text {
-    text-decoration: underline;
-}
+
 
 .expandable {
     display: none;
@@ -245,4 +284,164 @@ iframe {
     height: 400px;
     border-radius: 6px;
     border: none;
+}
+
+.lightbox {
+    background: rgba(54, 69, 79, 0.97);
+    /* Matches your charcoal theme */
+}
+
+
+.lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lightbox-trigger {
+    cursor: zoom-in;
+    display: inline-block;
+}
+
+.lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* allows clicks through the container */
+}
+
+.lightbox-prev,
+.lightbox-next {
+    color: #B2EBF2;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    pointer-events: auto;
+    /* enables clicks on the buttons */
+    user-select: none;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #FFFFFF;
+}
+
+.gallery-page .gallery-toggle.active {
+  color: white;
+  font-weight: 700;
+  background-color: rgba(178, 235, 242, 0.1);
+  border-left: 3px solid #B2EBF2;
+  padding-left: 0.5rem;
+}
+
+.gallery-page .gallery-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gallery-page .gallery-display {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.gallery-page .gallery-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-right: 1px solid #708090;
+}
+
+.gallery-page .gallery-toggle {
+    cursor: pointer;
+    color: #B2EBF2;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+
+.gallery-page .gallery-section {
+    display: none;
+}
+
+.gallery-page .gallery-section.open {
+    display: block;
+    width: 100%;
+}
+
+.gallery-page .photo-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #708090;
+    scroll-behavior: smooth;
+}
+
+.gallery-page .photo-carousel img {
+    height: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 4px;
 }
